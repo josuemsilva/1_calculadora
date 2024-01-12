@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Calculator.css";
+import yellowCircleImage from "/yellow-circle-png.png";
 
 const Calculator = () => {
   const [currentValue, setCurrentValue] = useState("0");
@@ -118,7 +119,7 @@ const Calculator = () => {
           <button onClick={handleCalculate}>=</button>
         </div>
       </div>
-      <img className="circles-img" src="/yellow-circle-png.png" />
+      <img className="circles-img" src={yellowCircleImage} />
     </div>
   );
 };
